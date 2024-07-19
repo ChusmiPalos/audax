@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="cabecera_aplicacion">
+        <h1>Buscador de Wikipedia</h1>
+    </div>
+
+    <div class="new_search">
+        <label for="searchTerm">T&eacute;rmino de b&uacute;squeda</label>
+        <input type="text" id="searchTerm" class="input_element"
+            placeholder="Ingrese un t&eacute;rmino de b&uacute;squeda">
+        <button id="searchButton" class="button_personalizado">Buscar</button>
+        <div id="answers"></div>
+    </div>
+
+
+    <!-- Esta parte no se ha solicitado, pero quería mostrar un historial de búsqueda desde la misma interfaz, permite consultar el historial de búsquedas sin tener que acceder a la propia tabla de la base de datos -->
+    <div class="previous_searchs">
+        <button id="consulta_historial" class="button_personalizado">Consultar Historial</button>
+        <center>
+            <table id="tabla_historial">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>B&uacute;squeda</th>
+                        <th>Fecha y Hora</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </center>
+    </div>
+</div>
